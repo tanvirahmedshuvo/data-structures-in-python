@@ -35,3 +35,16 @@ if __name__ == '__main__':
     # elements = ["mona", "dhaval", "aamir", "tina", "chang"]
     quick_sort(elements, 0, len(elements)-1)
     print(elements)
+
+    tests = [
+        [11,9,29,7,2,15,28],
+        [3, 7, 9, 11],
+        [25, 22, 21, 10],
+        [29, 15, 28],
+        [],
+        [6]
+    ]
+
+    for elements in tests:
+        quick_sort(elements, 0, len(elements)-1)
+        print(f'sorted array: {elements}')
